@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS drawing</title>
+
+<style>
+
+#bigwindow{
+    position: relative;
+    width: 1500px;
+    height: 500px;
+    background-color: rgb(183, 255, 255);
+    overflow: hidden;
+}
+
+    #building {
+        left: 100px;
+        top:100px;
+        position: absolute;
+        width: 500px;
+        height: 1000px;
+        background: linear-gradient(to bottom left, white, grey);
+        
+        overflow: hidden;
+    }
+
+    .window{
+        width: 50px;
+        height: 60px;
+        background-color: rgb(51, 101, 168);
+        margin: 10px;
+        box-shadow: inset 4px 4px 8px black;
+        
+    }
+
+    #window1 {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+    }
+    #window2 {
+        position: absolute;
+        top: 50px;
+        left: 150px;
+    }
+    #window3{
+        position: absolute;
+        top: 50px;
+        left: 250px;
+    } 
+
+    #sun{
+        background-color: rgb(252, 252, 248);
+        position: absolute;
+        width: 1000px;
+        height: 1000px;
+        top: 200px;
+        left: 50px;
+        transform: rotate(45deg);
+        filter: blur(20px);
+    }
+    #side{
+        width:100px;
+  height:1000px;
+  background-color:rgb(252, 252, 248) ;
+  float:left;
+  transform: skew(180deg,210deg);
+  position: absolute;
+  left: 600px;
+  top: 130px;
+  border: 1px solid rgb(161, 155, 155);
+
+    }
+
+    #window4{
+        position: absolute;
+        top: 50px;
+        left:350px;
+    }
+
+    #window5{
+        position: absolute;
+        top: 150px;
+        left: 50px;
+        width: 150px;
+    }
+
+    #window6{
+        position: absolute;
+        top: 150px;
+        left: 100px;
+        width: 100px;
+    }
+</style>
+
+
+</head>
+<body>
+ <div id= "bigwindow">
+
+ <div id="side"> </div>
+
+    <div id="building">
+
+        <div id="window1" class=" window"></div>
+        <div id="window2" class="window"></div>
+        <div id="window3" class=" window"></div>
+        
+        
+    <div id="sun"></div>
+<div id="window4" class="window"></div>
+        <div id="window5" class=" window"></div>
+   <div id="window6" class=" window"></div>
+    </div>
+
+    </div>
+    
+</body>
+</html>
